@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* Tạo bố cục cho trang */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .content {
+            flex: 1;
+            /* Đẩy footer xuống */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand"><img src="img/logofpt.jpg" alt="" style="width: 150px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-togger="#navBar" aria-controls="navBar"
+                aria-expanded="false" aria-label="Toggler navaigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navBar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" id="listUser" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Manage User</a>
+                        <ul class="dropdown-menu" aria-lablelledby="listUser">
+                            <li><a href="" class="dropdown-item">List User</a></li>
+                            <li class="dropdown-divider">
+                                <hr>
+                            </li>
+                            <li><a href="" class="dropdown-item">Create User</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" id="listVideo" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Manage Video</a>
+                        <ul class="dropdown-menu" aria-lablelledby="listVideo">
+                            <li><a href="" class="dropdown-item">List Video</a></li>
+                            <li class="dropdown-divider">
+                                <hr>
+                            </li>
+                            <li><a href="" class="dropdown-item">Create Video</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="" class="nav-link">Log</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container content bg-light">
+        <div class="row">
+            <table class="table table-bordered">
+                <thead>
+                    <th>ID</th>
+                    <th>Gmail</th>
+                    <th>Full Name</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer class="bg-primary text-white text-center">
+        © PS38631_Lab3 FPT Poly
+    </footer>
+</body>
+
+</html>
